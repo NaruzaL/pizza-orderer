@@ -43,8 +43,8 @@ $(document).ready(function() {
       var totalPrice = newPizza.price();
       $("#display").text(totalPrice)
       $("#pizzaSize").text(size);
-      toppings.forEach(function(i){
-      $('#pizzaToppings').append("<li> + i + </li>");
+      newPizza.toppings.forEach(function(i){
+      $('#pizzaToppings').append("<li>" + i + "</li>");
       });
       $("#selectors").hide();
       $('#result').fadeIn();

@@ -19,3 +19,7 @@ img {
   text-align: center;
   background-color: #9AFF9A;
 }
+
+ul {
+  list-style-type: none;
+}
