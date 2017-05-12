@@ -10,3 +10,12 @@ img {
   height:200px;
 
 }
+#result {
+  display: none;
+  text-align: center;
+}
+
+#display {
+  text-align: center;
+  background-color: red;
+}

@@ -6,19 +6,19 @@ function pizza(toppings, size) {
 
 pizza.prototype.price = function(){
   var cost = 0;
-  if (newPizza.pizzaSize === "small"){
-    cost = 4;
+  if (this.pizzaSize === "small"){
+    cost = 14;
   }
-    else if (newPizza.pizzaSize === "med"){
-      cost = 5;
+    else if (this.pizzaSize === "med"){
+      cost = 25;
     }
-      else if (newPizza.pizzaSize === "large"){
-        cost = 6;
+      else if (this.pizzaSize === "large"){
+        cost = 36;
       }
-      for (var i =1; i < newPizza.toppings.length; i ++) {
-        cost += .10;
-      }
-      return cost
+        for (var i =1; i < this.toppings.length; i ++) {
+          cost += 1;
+        }
+        return cost
 
 }
 
@@ -33,11 +33,19 @@ $(document).ready(function() {
     event.preventDefault();
       var toppings = [];
       $('input:checkbox[name=toppings]:checked').each(function(){
-        toppings.push($(this).val())
+        toppings.push($(this).val());
+        console.log(toppings);
       });
-      var size = $('input:radio[name=size]:checked'.val());
+      var size = $('input:radio[name=size]:checked').val();
+      console.log(size);
       var newPizza = new pizza(toppings, size);
       var totalPrice = newPizza.price();
+      $("#display").text(totalPrice)
+      $("#pizzaSize").text(this.pizzaSize);
+      $('#pizzaToppings').text(this.toppings);
+      $("#selectors").hide();
+      $('#result').fadeIn();
+
 
   });
 });
