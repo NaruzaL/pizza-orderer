@@ -32,7 +32,6 @@ h4 {
 
 ul {
   list-style-type: none;
-
 }
 
 body {
@@ -49,11 +48,11 @@ body {
   background-color: white;
 }
 
-#order {
-
-}
-
 a {
   color: blue;
+  cursor: pointer;
+}
 
+a:hover {
+  text-decoration: underline;
 }
