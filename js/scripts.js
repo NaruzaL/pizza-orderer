@@ -9,13 +9,13 @@ pizza.prototype.price = function(){
   if (this.pizzaSize === "small"){
     cost = 14;
   }
-    else if (this.pizzaSize === "med"){
-      cost = 25;
+    else if (this.pizzaSize === "medium"){
+      cost = 17;
     }
       else if (this.pizzaSize === "large"){
-        cost = 36;
+        cost = 20;
       }
-        for (var i =1; i < this.toppings.length; i ++) {
+        for (var i = 0; i < this.toppings.length; i ++) {
           cost += 1;
         }
         return cost
@@ -39,10 +39,13 @@ $(document).ready(function() {
       var size = $('input:radio[name=size]:checked').val();
       console.log(size);
       var newPizza = new pizza(toppings, size);
+      console.log(newPizza)
       var totalPrice = newPizza.price();
       $("#display").text(totalPrice)
-      $("#pizzaSize").text(this.pizzaSize);
-      $('#pizzaToppings').text(this.toppings);
+      $("#pizzaSize").text(size);
+      toppings.forEach(function(i){
+      $('#pizzaToppings').append("<li> + i + </li>");
+      });
       $("#selectors").hide();
       $('#result').fadeIn();
 

@@ -38,7 +38,7 @@
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="size" value="med">
+              <input type="radio" name="size" value="medium">
               Medium - 14"
             </label>
           </div>
@@ -56,8 +56,10 @@
         </div>
       </form>
       <div id = "result">
-        <p>You've selected a <span id='pizzaSize'></span> pizza with <span id = "pizzaToppings"></span> on it.</p>
-        <p>Your total is<span id = "display"></span></p>
+        <p>You've selected a <span id='pizzaSize'></span> pizza with these toppings:</p>
+          <ul id = "pizzaToppings">
+          </ul>
+        <p>Your total is $<span id = "display"></span></p>
       </div>
     </div>
   </body>
