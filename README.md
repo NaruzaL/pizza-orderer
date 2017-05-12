@@ -10,7 +10,7 @@
 
 ## Specifications
 
-##### Price is calculated by assigning a value to each size of pizza and then adding each selected topping to an array and counting the number of items in the array, each costing $1.
+#### Price is calculated by assigning a value to each size of pizza and then adding each selected topping to an array and counting the number of items in the array, each costing $1.
 #### Example:
 |User input| Return|
 |----------|-------|
@@ -26,7 +26,7 @@
 
 ## Known Bugs
 
-##### Resizing the window causes alignment issues.
+#### Resizing the window causes alignment issues.
 
 ## Support and contact details
 
