@@ -35,8 +35,9 @@ $(document).ready(function() {
       $('input:checkbox[name=toppings]:checked').each(function(){
         toppings.push($(this).val())
       });
-      var size = parseInt($('input:radio[name=size]:checked').val());
+      var size = $('input:radio[name=size]:checked'.val());
       var newPizza = new pizza(toppings, size);
-      console.log(newPizza);
+      var totalPrice = newPizza.price();
+
   });
 });
