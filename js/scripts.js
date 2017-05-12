@@ -1,8 +1,6 @@
-function pizza(meats, veggies, size) {
-    this.pizzaMeats = meats;
-    this.pizzaVeggies = veggies;
+function pizza(toppings, size) {
+    this.toppings = toppings;
     this.pizzaSize = size;
-
 }
 
 
@@ -10,14 +8,17 @@ function pizza(meats, veggies, size) {
 
 
 
-
-$(document).ready(funciton(){
-  $("form#pizza").submit(function(event){
+//front end -----------------------------------------------
+$(document).ready(function() {
+  $("form#pizza").submit(function(event) {
     event.preventDefault();
-
-    var meats = $(input:checkbox[name=meats]:checked).val();
-    var veggies = $(input:checkbox[name=veggies]:checked).val();
-    var size = $(input:checkbox[name=size]:checked).val();
-    var newPizza = new pizza(meats, veggies, size);
+      var pizzaPrice = 0;
+      var toppings = [];
+      $('input:checkbox[name=toppings]:checked').each(function(){
+        toppings.push($(this).val())
+      });
+      var size = parseInt($('input:radio[name=size]:checked').val());
+      var newPizza = new pizza(toppings, size);
+      console.log(newPizza);
   });
 });
