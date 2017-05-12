@@ -39,14 +39,15 @@ $(document).ready(function() {
       $('input:checkbox[name=toppings]:checked').each(function(){
         toppings.push($(this).val());
       });
+
       var size = $('input:radio[name=size]:checked').val();
       var newPizza = new pizza(toppings, size);
       var totalPrice = newPizza.price();
       $("#display").text(totalPrice)
       $("#pizzaSize").text(size);
       newPizza.toppings.forEach(function(i){
-      $('#pizzaToppings').append("<li>" + i + "</li>");
-      });
+        $('#pizzaToppings').append("<li>" + i + "</li>");
+        });
 
       $("#selectors").hide();
       $('#result').fadeIn();
