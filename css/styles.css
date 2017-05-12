@@ -1,15 +1,16 @@
 .jumbotron {
-  background-color: black;
+  background-image: url(../img/pizzaOven.jpg);
+  background-size: cover;
+  height: 500px;
+
 }
 
 h1 {
+  margin-top: 200px;
   text-align: center;
+  text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
 }
 
-img {
-  height:200px;
-
-}
 #result {
   display: none;
   text-align: center;
@@ -22,4 +23,17 @@ img {
 
 ul {
   list-style-type: none;
+}
+
+body {
+  background-image: url(../img/background.jpg);
+  color: black;
+}
+col {
+  background-color: white;
+}
+
+a {
+  color: blue;
+
 }
