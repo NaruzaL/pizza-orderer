@@ -12,13 +12,12 @@ h1 {
 
 h3 {
   text-align: center;
-
 }
 
 h4 {
   text-align: center;
-
 }
+
 #result {
   display: none;
   text-align: center;
@@ -56,3 +55,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
+ button {
+   float:right;
+ }
