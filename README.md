@@ -6,16 +6,16 @@
 
 ## Description
 
-##### This webpage uses checkboxes and radio buttons to take a pizza order from a user. It then displays the size, topping and cost back to the user.
+#### This webpage uses checkboxes and radio buttons to take a pizza order from a user. It then displays the size, topping and cost back to the user.
 
 ## Specifications
 
-#### Price is calculated by assigning a value to each size of pizza and then adding each selected topping to an array and counting the number of items in the array, each costing $1.
+#### The user is able to select pizza size and toppings. On the confirmation page they are shown what they chose.
 #### Example:
-|User input| Return|
-|----------|-------|
-|Small (pizza size)| $14 |
-|pepperoni, olvies| $2|
+|The program should take| Input example | Output example|
+|----------|-------|-------|
+|Radio button selection|"small"|"small"|
+|Checkbox clicked|"pepperoni"|"pepperoni"|
 
 
 ## Setup/Installation Requirements
